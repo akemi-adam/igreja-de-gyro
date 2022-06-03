@@ -7,6 +7,17 @@
     <title>Cadastro</title>
 </head>
 <body>
+    <h1>
+        Formulário de registro
+    </h1>
+    <p>
+        <strong>
+            Observação: 
+        </strong>
+        Coloque um nome sem espaços :)
+    </p>
+    <hr>
+    <br>
     <form action="/savemember" method="post">
         <label for="name">
             Nome

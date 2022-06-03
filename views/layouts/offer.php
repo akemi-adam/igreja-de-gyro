@@ -14,13 +14,17 @@
         <label for="salary">
             Salário
         </label>
-        <input type="number" name="salary" required>
+        <input type="number" name="salary" min="10" required>
 
-        <label for="member">
+        <label for="members">
             Membro
         </label>
-        <select name="member" id="">
-            <option value="teste">------</option>
+        <select name="members" id="members">
+            <?php
+                while ($membersNames = $query->fetchArray()) {
+                    echo "<option value=" . $membersNames['name'] . ">" . $membersNames['name'] ."</option>";
+                }
+            ?>
         </select>
         <button>
             Enviar
