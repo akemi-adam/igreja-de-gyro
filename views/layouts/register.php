@@ -11,10 +11,7 @@
         Formulário de registro
     </h1>
     <p>
-        <strong>
-            Observação: 
-        </strong>
-        Coloque um nome sem espaços :)
+        Se cadastre já! :)
     </p>
     <hr>
     <br>

@@ -13,13 +13,17 @@
     <?php 
 
         while ($member = $queries[0]->fetchArray()) {
+
             echo "<h3>" . $member['name'] ."</h3>";
-            echo "<p>CPF: " . $member['cpf']  . "<br>Endereço: " . $member['district'] . ", " . $member['street'] . ", " . $member['houseNumber'] . "</p>";
+            echo "<p>CPF: " . $member['cpf']  . "<br>Endereço: " . $member['district'] . ", " . $member['street'] . ", " . $member['houseNumber'] . "<br>Código do membro: " . $member['id_member'] ."</p>";
+            echo "<p><strong>Dízimos pagos: </strong></p>";
+
             while ($offer = $queries[1]->fetchArray()) {
-                if ($member['name'] === $offer['member']) {
+                if ($member['id_member'] === $offer['id_member']) {
                     echo "<ul><li>" . $offer['offer'] . "</li></ul>";
                 }
             }
+
         }
     ?>
 </body>

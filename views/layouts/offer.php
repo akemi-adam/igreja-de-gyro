@@ -21,8 +21,8 @@
         </label>
         <select name="members" id="members">
             <?php
-                while ($membersNames = $query->fetchArray()) {
-                    echo "<option value=" . $membersNames['name'] . ">" . $membersNames['name'] ."</option>";
+                while ($members = $query->fetchArray()) {
+                    echo "<option value=" . $members['id_member'] . ">" . $members['name'] ."</option>";
                 }
             ?>
         </select>

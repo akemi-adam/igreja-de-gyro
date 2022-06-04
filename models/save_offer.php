@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $finalOffer = $offers[0] * 0.367;
 
     try {
-        $database->exec("INSERT INTO offers('salary', 'member', 'offer') VALUES('" . $offers[0] . "', '" . $offers[1] . "', '" . $finalOffer ."')");
+        $database->exec("INSERT INTO offers('salary', 'id_member', 'offer') VALUES('" . $offers[0] . "', '" . $offers[1] . "', '" . $finalOffer ."')");
         include __DIR__ . "/../views/layouts/index.php";
     } catch (Exception $e) {
         echo $e->getMessage();
