@@ -10,6 +10,9 @@
         Lista de membros
     </h1>
     <hr>
+
+    <!-- Lista todos os membros e suas principais informações, tal como todas as ofertas (dízimos) que eles já fizeram -->
+
     <?php 
 
         while ($member = $queries[0]->fetchArray()) {

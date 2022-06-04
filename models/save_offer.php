@@ -2,7 +2,7 @@
 
 $database = require(__DIR__ . '/../connection.php');
 
-    /* Verifica se o método do formulário é POST, captura as informações, depois passa para um try-catch onde tentará salvar os dados armazenados em um array na tabela offers. No caso de sucesso, redireciona para a homepage. Em caso de erro, uma mensagem mostrando a exception será exibida. Por fim, o banco de dados é fechado. */
+    /* Verifica se o método do formulário é POST, captura as informações, depois passa para um try-catch onde tentará salvar os dados armazenados em um array (e o resultado de 36,7% do salário) na tabela offers. No caso de sucesso, redireciona para a homepage. Em caso de erro, uma mensagem mostrando a exception será exibida. Por fim, o banco de dados é fechado. */
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     

@@ -1,5 +1,7 @@
 <?php
 
+    /* Grupo de rotas padrão */
+
 $routes = [
     "/" => "/views/layouts/index.php",
     "/show" => "/scripts/show_aux.php",

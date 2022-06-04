@@ -19,6 +19,9 @@
         <label for="members">
             Membro
         </label>
+
+        <!-- Select cujas options representam os membros (e seus value o id respectivo deles) -->
+        
         <select name="members" id="members">
             <?php
                 while ($members = $query->fetchArray()) {
